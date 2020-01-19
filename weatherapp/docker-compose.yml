@@ -1,0 +1,10 @@
+version: '3'
+services: 
+    weather_back:
+        build: ./backend
+        ports:
+            - '9000:9000'
+    weather_front:
+        build: ./frontend
+        ports:
+            - '8000:8000'
